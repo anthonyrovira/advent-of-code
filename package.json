@@ -6,6 +6,7 @@
   "scripts": {
     "01": "ts-node-dev ./2022/01 index.ts --respawn",
     "02": "ts-node-dev ./2022/02 index.ts --respawn",
+    "03": "ts-node-dev ./2022/03 index.ts --respawn",
     "test": "vitest",
     "test:watch": "vitest --watch",
     "test:watchAll": "vitest --watchAll"
