@@ -1,9 +1,9 @@
 const fs = require("fs");
-path = require("path");
-filePath = path.join(__dirname, "input.txt");
+const path = require("path");
+const filePath = path.join(__dirname, "./input.txt");
 
 try {
-  const raw = fs.readFileSync(filePath, "utf8");
+  const raw = fs.readFileSync(filePath);
   const data = raw.toString().split("\r\n");
   let sumOfCalories = 0;
   let highest = 0;
@@ -15,13 +15,13 @@ try {
       }
     } else sumOfCalories = 0;
   }
-  console.log(highest);
+  console.log("Part one: ", highest);
 } catch (error) {
   console.error(error);
 }
 
 try {
-  const raw = fs.readFileSync(filePath, "utf8");
+  const raw = fs.readFileSync(filePath);
   const data = raw.toString().split("\r\n");
   let sumOfCalories = 0;
   let highests = [0, 0, 0];
@@ -54,7 +54,9 @@ try {
   const sum = highests.reduce((accumulator, value) => {
     return accumulator + value;
   }, 0);
-  console.log("sum ", sum);
+  console.log("Part two: ", sum);
 } catch (error) {
   console.error(error);
 }
+
+export {};
