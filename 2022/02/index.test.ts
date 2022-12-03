@@ -5,7 +5,7 @@ import {
   PlayerOne,
   PlayerTwo,
   RoundResult,
-} from ".";
+} from "./utils";
 
 describe("getScoreOfPlayerTwo", () => {
   test("should return sum of points won according to part one rules", () => {
